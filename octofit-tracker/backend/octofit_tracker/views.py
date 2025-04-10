@@ -10,7 +10,7 @@ class UserViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'])
     def api_root(self, request):
-        return Response({"url": "http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev"})
+        return Response({"url": "http://supreme-parakeet-p9jxjg5jxrwhrvg4-8000.app.github.dev"})
 
 class TeamViewSet(viewsets.ModelViewSet):
     queryset = Team.objects.all()
@@ -18,7 +18,7 @@ class TeamViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'])
     def api_root(self, request):
-        return Response({"url": "http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev"})
+        return Response({"url": "http://supreme-parakeet-p9jxjg5jxrwhrvg4-8000.app.github.dev"})
 
 class ActivityViewSet(viewsets.ModelViewSet):
     queryset = Activity.objects.all()
@@ -26,7 +26,7 @@ class ActivityViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'])
     def api_root(self, request):
-        return Response({"url": "http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev"})
+        return Response({"url": "http://supreme-parakeet-p9jxjg5jxrwhrvg4-8000.app.github.dev"})
 
 class LeaderboardViewSet(viewsets.ModelViewSet):
     queryset = Leaderboard.objects.all()
@@ -34,7 +34,7 @@ class LeaderboardViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'])
     def api_root(self, request):
-        return Response({"url": "http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev"})
+        return Response({"url": "http://supreme-parakeet-p9jxjg5jxrwhrvg4-8000.app.github.dev"})
 
 class WorkoutViewSet(viewsets.ModelViewSet):
     queryset = Workout.objects.all()
@@ -42,4 +42,4 @@ class WorkoutViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'])
     def api_root(self, request):
-        return Response({"url": "http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev"})
+        return Response({"url": "http://supreme-parakeet-p9jxjg5jxrwhrvg4-8000.app.github.dev"})
