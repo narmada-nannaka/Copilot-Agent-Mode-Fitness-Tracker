@@ -84,6 +84,9 @@ DATABASES = {
         'NAME': 'octofit_db',
         'HOST': 'localhost',
         'PORT': 27017,
+        'CLIENT': {
+            'connectTimeoutMS': 30000,  # Set timeout to 30 seconds
+        },
     }
 }
 
