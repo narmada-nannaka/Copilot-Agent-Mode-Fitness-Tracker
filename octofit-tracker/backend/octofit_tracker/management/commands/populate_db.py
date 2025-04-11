@@ -31,11 +31,11 @@ class Command(BaseCommand):
         User.objects.bulk_create(users)
 
         # Create teams
-        team = Team(_id=ObjectId(), name='Blue Team')
-        team = Team(_id=ObjectId(), name='Gold Team')
+        team = Team(_id=ObjectId(), name='Blue Team', members=[])
         team.save()
         for user in users:
-            team.members.add(user)
+            team.members.append(user)
+        team.save()
 
         # Create activities
         activities = [
