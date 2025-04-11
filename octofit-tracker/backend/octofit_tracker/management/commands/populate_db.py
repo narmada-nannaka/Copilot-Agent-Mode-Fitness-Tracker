@@ -39,12 +39,11 @@ class Command(BaseCommand):
 
         # Create activities
         activities = [
-            Activity(_id=ObjectId(), user=users[0], activity_type='Cycling', duration=timedelta(hours=1)),
-            Activity(_id=ObjectId(), user=users[1], activity_type='Crossfit', duration=timedelta(hours=2)),
-            Activity(_id=ObjectId(), user=users[2], activity_type='Running', duration=timedelta(hours=1, minutes=30)),
-            Activity(_id=ObjectId(), user=users[3], activity_type='Strength', duration=timedelta(minutes=30)),
-            Activity(_id=ObjectId(), user=users[4], activity_type='Swimming', duration=timedelta(hours=1, minutes=15)),
-        ]
+            Activity(_id=ObjectId(), user=users[0], activity_type='Cycling', duration=int(timedelta(hours=1).total_seconds() // 60)),
+            Activity(_id=ObjectId(), user=users[1], activity_type='Crossfit', duration=int(timedelta(hours=2).total_seconds() // 60)),
+            Activity(_id=ObjectId(), user=users[2], activity_type='Running', duration=int(timedelta(hours=1, minutes=30).total_seconds() // 60)),
+            Activity(_id=ObjectId(), user=users[3], activity_type='Strength', duration=int(timedelta(minutes=30).total_seconds() // 60)),
+            Activity(_id=ObjectId(), user=users[4], activity_type='Swimming', duration=int(timedelta(hours=1, minutes=15).total_seconds() // 60)),
         Activity.objects.bulk_create(activities)
 
         # Create leaderboard entries
