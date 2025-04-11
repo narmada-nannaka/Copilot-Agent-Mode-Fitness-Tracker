@@ -135,5 +135,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-# Add a suffix for Django REST API endpoints
-API_SUFFIX = 'api/v1/'
+# Add the codespace Django REST API endpoint suffix
+API_BASE_URL = "http://supreme-parakeet-p9jxjg5jxrwhrvg4-8000.app.github.dev"
