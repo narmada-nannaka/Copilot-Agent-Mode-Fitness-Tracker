@@ -1,0 +1,54 @@
+body {
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark text color */
+}
+
+.navbar {
+  background-color: #007bff; /* Blue navigation menu */
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #ffcc00; /* Gold hover effect */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #007bff; /* Blue headings */
+}
+
+.table {
+  background-color: #ffffff; /* White table background */
+  border: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9; /* Light gray for striped rows */
+}
+
+.btn {
+  background-color: #007bff; /* Blue buttons */
+  color: white;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.App-logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.favicon {
+  width: 32px;
+  height: 32px;
+}

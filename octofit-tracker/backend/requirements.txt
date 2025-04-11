@@ -1,0 +1,5 @@
+# Simplified dependencies for the octofit-tracker backend
+Django==3.2.25
+djongo==1.3.6
+sqlparse==0.2.4
+djangorestframework==3.12.4
