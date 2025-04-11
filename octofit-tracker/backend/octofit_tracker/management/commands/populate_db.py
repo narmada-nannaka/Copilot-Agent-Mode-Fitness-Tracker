@@ -48,12 +48,11 @@ class Command(BaseCommand):
 
         # Create leaderboard entries
         leaderboard_entries = [
-            Leaderboard(_id=ObjectId(), user=users[0], score=100),
-            Leaderboard(_id=ObjectId(), user=users[1], score=90),
-            Leaderboard(_id=ObjectId(), user=users[2], score=95),
-            Leaderboard(_id=ObjectId(), user=users[3], score=85),
-            Leaderboard(_id=ObjectId(), user=users[4], score=80),
-        ]
+            Leaderboard(_id=ObjectId(), team=team, score=100),
+            Leaderboard(_id=ObjectId(), team=team, score=90),
+            Leaderboard(_id=ObjectId(), team=team, score=95),
+            Leaderboard(_id=ObjectId(), team=team, score=85),
+            Leaderboard(_id=ObjectId(), team=team, score=80),
         Leaderboard.objects.bulk_create(leaderboard_entries)
 
         # Create workouts
